@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { RootState } from '../store/store';
 // import {SPOTIFY_CLIENT_ID , SPOTIFY_CLIENT_SECRET } from  '@env';
 
-const CLIENT_ID = "6389c0b253bf40938d767d188caacaa3";
-const CLIENT_SECRET = "792d8196f9aa4a2394214b123de93ebc";
+const CLIENT_ID = "CLIENT_ID";
+const CLIENT_SECRET = "CLIENT_SECRET";
 
 export const fetchAccessToken = createAsyncThunk('Melofy/fetchAccessToken', async ()=>{
     const response = await fetch('https://accounts.spotify.com/api/token',{
